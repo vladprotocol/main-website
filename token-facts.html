@@ -78,7 +78,7 @@
                                 <a class="nav-link pactive" href="./token-facts">Token Facts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://app.vlad.finance" target="_blank">Farms</a>
+                                <a class="nav-link" href="https://app.vlad.finance/farms" target="_blank">Farms</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://app.vlad.finance/nft" target="_blank">NFTs</a>
@@ -618,7 +618,7 @@
                                 <h4>MAXIMUM SUPPLY</h4>
                                 <P>2,050,000 aLIFE</P>
                                 <h4>CIRCULATING SUPPLY</h4>
-                                <P>000,000.00 aLIFE</P>
+                                <P><span id="alife-circulating-supply"></span></P>
                                 <h4>EMISSION RATE</h4>
                                 <P>3 Years</P>
                             </div>
@@ -629,12 +629,22 @@
                     <div class="inner-mid-intro">
                         <article>
                             <h4>WHAT IS $aLIFE</h4>
+
                             <p>aLIFE will be the token used for NFT minting on VLAD Finance's v2 platform. The majority
                                 of aLIFE will be emitted through our liquidity farming event. Each NFT minted will lock
                                 a portion of $aLIFE in the NFT to offer immediate liquidity when needed by its owner. Of
                                 the NFT sale, a majority is paid out to the original artist and a small portion goes to
                                 the treasury for VLAD Finance development funds. $VLAD stakers will also share a portion
                                 of profits from the sale.</p>
+                                <div class="token-contract-container">
+                                    <p>Contract Address:  <span id="alifeAddress"
+                                    onclick="CopyToClipboard('alifeAddress', 'alifeCopyButton');"
+                                    class="copy-area">0x42ba7bbddecb471c1e1fe08636918952b6c19019</span>
+                                    <span id="alifeCopyButton"
+                                        onclick="CopyToClipboard('alifeAddress', 'alifeCopyButton');"
+                                        style="cursor:pointer;"><i class="far fa-copy ms-2" style="color:#b90d0d;"></i></span>
+                                </div>
+
                         </article>
                     </div>
                     <div class="alifetokenomic">
@@ -682,15 +692,22 @@
                     <div class="resources">
                         <h4>RESOURCES</h4>
                         <ul>
-                            <li class="fdeactive"><a href="#">BSCScan<i class="fas fa-arrow-right ms-2"></i></a></li>
-                            <li class="fdeactive"><a href="#">Buy $aLIFE on PancakeSwap<i
-                                        class="fas fa-arrow-right ms-2"></i></a></li>
+                          <li><a href="https://bscscan.com/token/0x42ba7bbddecb471c1e1fe08636918952b6c19019"
+                             target="_blank">BSCScan<i
+                                      class="fas fa-arrow-right ms-2"></i></a></li>
+                          <li><a target="_blank"
+                                  href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x42ba7bbddecb471c1e1fe08636918952b6c19019">Buy
+                                  $LIFE on PancakeSwap<i class="fas fa-arrow-right ms-2"></i></a></li>
+                          <li><a href="https://dex.guru/token/0x42ba7bbddecb471c1e1fe08636918952b6c19019-bsc"
+                             target="_blank">DexGuru<i
+                                      class="fas fa-arrow-right ms-2"></i></a></li>
+                          <li><a target="_blank"
+                                          href="https://goswappcharts.web.app/?isbsc=true&tokenId=0x42ba7bbddecb471c1e1fe08636918952b6c19019">GoSwapp
+                                          Chart<i class="fas fa-arrow-right ms-2"></i></a></li>
                             <li class="fdeactive"><a href="#">CoinMarketCap<i class="fas fa-arrow-right ms-2"></i></a>
                             </li>
                             <li class="fdeactive"><a href="#">CoinGecko<i class="fas fa-arrow-right ms-2"></i></a></li>
-                            <li class="fdeactive"><a href="#">DexGuru<i class="fas fa-arrow-right ms-2"></i></a></li>
-                            <li class="fdeactive"><a href="#">GoSwapp Chart<i class="fas fa-arrow-right ms-2"></i></a>
-                            </li>
+
                             <li class="fdeactive"><a href="#">Nomics<i class="fas fa-arrow-right ms-2"></i></a></li>
                             <li class="fdeactive"><a href="#">LiveCoinWatch<i class="fas fa-arrow-right ms-2"></i></a>
                             </li>
@@ -789,18 +806,22 @@
                         <div class="col-sm-12 col-md-3">
                             <h6>$aLIFE</h6>
                             <ul>
-                                <li class="fdeactive"><img src="assets/images/fbscscanlogo.svg" class="img-fluid"
-                                        alt="">BSCScan</li>
-                                <li class="fdeactive"><img src="assets/images/fpancakeswap.svg" class="img-fluid"
-                                        alt="">Buy $VLAD</li>
-                                <li class="fdeactive"><img src="assets/images/dexguru.png" class="img-fluid"
-                                        alt="">DexGuru</li>
+                                <li><a href="https://bscscan.com/token/0x42ba7bbddecb471c1e1fe08636918952b6c19019" target="_blank">
+                                  <img src="assets/images/fbscscanlogo.svg" class="img-fluid"
+                                        alt="">BSCScan</a></li>
+                                <li><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x42bA7BbDDEcb471c1e1Fe08636918952b6C19019" target="_blank">
+                                  <img src="assets/images/fpancakeswap.svg" class="img-fluid"
+                                        alt="">Buy $ALIFE</a></li>
+                                <li><a href="https://goswappcharts.web.app/?isbsc=true&tokenId=0x42ba7bbddecb471c1e1fe08636918952b6c19019"
+                                        target="_blank"><img src="assets/images/fgoswapp.svg" class="img-fluid"
+                                        alt="GoSwapp">GoSwapp</a></li>
+                                <li><a href="https://dex.guru/token/0x42ba7bbddecb471c1e1fe08636918952b6c19019-bsc"
+                                        target="_blank"><img src="assets/images/dexguru.png" class="img-fluid"
+                                        alt="">DexGuru</a></li>
                                 <li class="fdeactive"><img src="assets/images/fcoingecko.svg" class="img-fluid"
                                         alt="">CoinGecko</li>
                                 <li class="fdeactive"><img src="assets/images/fcoinmarketcap.svg" class="img-fluid"
                                         alt="">CoinMarketCap</li>
-                                <li class="fdeactive"><img src="assets/images/fgoswapp.svg" class="img-fluid"
-                                        alt="GoSwapp">GoSwapp</li>
                                 <li class="fdeactive"><img src="assets/images/fnomics.svg" class="img-fluid"
                                         alt="">Nomics</li>
                                 <li class="fdeactive"><img src="assets/images/fLiveCoinWatch.svg" class="img-fluid"

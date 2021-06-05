@@ -83,7 +83,7 @@
                                     <a class="nav-link" href="./token-facts">Token Facts</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://app.vlad.finance" target="_blank">Farms</a>
+                                    <a class="nav-link" href="https://app.vlad.finance/farms" target="_blank">Farms</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="https://app.vlad.finance/nft" target="_blank">NFTs</a>
@@ -124,7 +124,8 @@
                                             target="_blank" class="btn-red">Buy $Vlad</a></li>
                                     <li><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x50f4220C82c9325dC99f729C3328FB5c338BEaae"
                                             target="_blank" class="btn-red">Buy $Life</a></li>
-                                    <!-- <li><a href="#" class="btn-plain">What is Vlad</a></li> -->
+                                    <li><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x42bA7BbDDEcb471c1e1Fe08636918952b6C19019"
+                                                    target="_blank" class="btn-red">Buy $ALife</a></li>
                                 </ul>
                             </div>
                             <div class="downarrow bounce">
@@ -315,7 +316,12 @@
                                                 aria-labelledby="v-pills-messages-tab">
                                                 <div class="content-head3">
                                                     <h4>$aLIFE</h4>
-                                                    <!-- <a href="#">0x279d41f3f78fe5c1f0ba41ae963d6e545113c973<i class="far fa-copy ms-2"></i></a> -->
+                                                    <span id="alifeAddress"
+                                                    onclick="CopyToClipboard('alifeAddress', 'alifeCopyButton');"
+                                                    class="copy-area">0x42ba7bbddecb471c1e1fe08636918952b6c19019</span>
+                                                    <span id="alifeCopyButton"
+                                                        onclick="CopyToClipboard('alifeAddress', 'alifeCopyButton');"
+                                                        style="cursor:pointer;"><i class="far fa-copy ms-2" style="color:#b90d0d;"></i></span>
                                                 </div>
                                                 <article>
                                                     <h5>What is $aLIFE?</h5>
@@ -330,14 +336,21 @@
                                                         <li>Total Supply - <span>2,050,000 aLIFE</span></li>
                                                         <li>Treasury - <span>254,200 aLIFE</span></li>
                                                         <li>Farming Emission - <span>1,676,900 aLIFE</span></li>
+                                                        <li>Circulating Supply -   <span id="alife-circulating-supply"></span></li>
+
                                                     </ul>
                                                 </div>
                                                 <div>
                                                     <ul class="cto-wrap">
                                                         <li><a href="./token-facts#alife-token"
                                                                 class="cto-btn">Learn more</a></li>
-                                                        <!-- <li><a href="#" class="cto-btn"><i class="me-2"><img src="assets/images/pancakebtn.svg" alt=""></i>Buy $aLife</a></li>
-                                                    <li><a href="#" class="cto-logo"><i><img src="assets/images/smbscan.svg" class="img-fluid" alt=""></i></a></li> -->
+                                                        <li><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x42bA7BbDDEcb471c1e1Fe08636918952b6C19019"
+                                                           class="cto-btn" target="_blank"><i class="me-2">
+                                                             <img src="assets/images/pancakebtn.svg" alt=""></i>Buy $aLife</a></li>
+                                                      <li><a href="https://bscscan.com/token/0x42bA7BbDDEcb471c1e1Fe08636918952b6C19019"
+                                                                     class="cto-logo" target="_blank"><i><img
+                                                                             src="assets/images/smbscan.svg"
+                                                                             class="img-fluid" alt=""></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -574,18 +587,22 @@
                             <div class="col-sm-12 col-md-3">
                                 <h6>$aLIFE</h6>
                                 <ul>
-                                    <li class="fdeactive"><img src="assets/images/fbscscanlogo.svg" class="img-fluid"
-                                            alt="">BSCScan</li>
-                                    <li class="fdeactive"><img src="assets/images/fpancakeswap.svg" class="img-fluid"
-                                            alt="">Buy $VLAD</li>
-                                    <li class="fdeactive"><img src="assets/images/dexguru.png" class="img-fluid"
-                                            alt="">DexGuru</li>
+                                    <li><a href="https://bscscan.com/token/0x42ba7bbddecb471c1e1fe08636918952b6c19019" target="_blank">
+                                      <img src="assets/images/fbscscanlogo.svg" class="img-fluid"
+                                            alt="">BSCScan</a></li>
+                                    <li><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x42bA7BbDDEcb471c1e1Fe08636918952b6C19019" target="_blank">
+                                      <img src="assets/images/fpancakeswap.svg" class="img-fluid"
+                                            alt="">Buy $ALIFE</a></li>
+                                    <li><a href="https://goswappcharts.web.app/?isbsc=true&tokenId=0x42ba7bbddecb471c1e1fe08636918952b6c19019"
+                                                    target="_blank"><img src="assets/images/fgoswapp.svg" class="img-fluid"
+                                                    alt="GoSwapp">GoSwapp</a></li>
+                                    <li><a href="https://dex.guru/token/0x42ba7bbddecb471c1e1fe08636918952b6c19019-bsc"
+                                            target="_blank"><img src="assets/images/dexguru.png" class="img-fluid"
+                                            alt="">DexGuru</a></li>
                                     <li class="fdeactive"><img src="assets/images/fcoingecko.svg" class="img-fluid"
                                             alt="">CoinGecko</li>
                                     <li class="fdeactive"><img src="assets/images/fcoinmarketcap.svg" class="img-fluid"
                                             alt="">CoinMarketCap</li>
-                                    <li class="fdeactive"><img src="assets/images/fgoswapp.svg" class="img-fluid"
-                                            alt="GoSwapp">GoSwapp</li>
                                     <li class="fdeactive"><img src="assets/images/fnomics.svg" class="img-fluid"
                                             alt="">Nomics</li>
                                     <li class="fdeactive"><img src="assets/images/fLiveCoinWatch.svg" class="img-fluid"

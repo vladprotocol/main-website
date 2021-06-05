@@ -40,12 +40,12 @@ $(document).ready(function() {
             }
         }),
 
-        // $.ajax({
-        //     url: "https://api.vlad.finance/?query=life_supply",
-        //     success: function(life_total_supply){
-        //         $('#life-total-supply').text(life_total_supply + ' LIFE')
-        //     }
-        // }),
+        $.ajax({
+            url: "https://api.vlad.finance/?query=alife_circulating_supply",
+            success: function(alife_total_supply){
+               $('#alife-circulating-supply').text(alife_total_supply + ' aLIFE')
+          }
+        }),
 
         $.ajax({
             url: "https://api.vlad.finance/?query=life_circulating",
