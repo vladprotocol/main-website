@@ -20,6 +20,7 @@ if(acc) {
   }
 }
 
+
 $(document).ready(function() {
 
 
@@ -52,16 +53,12 @@ $(document).ready(function() {
             success: function(api_life_circulating_supply){
                 lcs = api_life_circulating_supply;
                 $('.life-circulating-supply').text(api_life_circulating_supply + ' LIFE');
+                cp1 = lcs.replace(/,/g, "");
+                lb1 =  414093.21 - cp1;
+                $('.life-burned').text((lb1).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' LIFE')
             }
         }),
 
-        $.ajax({
-            url: "https://api.vlad.finance/?query=life_burned",
-            success: function(api_life_burned){
-                life_burned = api_life_burned
-                $('.life-burned').text(life_burned + ' LIFE')
-            }
-        })
 
       ).then(function() {
         cp = Math.round((lcs.replace(/,/g, "") / 414093.21) * 100);
