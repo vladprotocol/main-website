@@ -50,8 +50,8 @@ $(document).ready(function() {
         $.ajax({
             url: "https://api.vlad.finance/?query=life_circulating",
             success: function(api_life_circulating_supply){
-                lcs = api_life_circulating_supply
-                $('.life-circulating-supply').text(api_life_circulating_supply + ' LIFE')
+                lcs = api_life_circulating_supply;
+                $('.life-circulating-supply').text(api_life_circulating_supply + ' LIFE');
             }
         }),
 
@@ -65,9 +65,9 @@ $(document).ready(function() {
 
       ).then(function() {
         cp = Math.round((lcs.replace(/,/g, "") / 414093.21) * 100);
-        lb = 100 - cp
-        $('.cp').text(cp + '%')
-        $('.lb').text(lb + '%')
+        lb = 100 - cp;
+        $('.cp').text(cp + '%');
+        $('.lb').text(lb + '%');
         $('.cpp').text(cp + '% - $LIFE SUPPLY');
         $('.lbp').text(lb + '% - $LIFE BURNED');
         $('#cpp').attr('aria-valuenow', cp).css('width', cp+'%');
